@@ -17,13 +17,13 @@ $.getJSON( airtable_list_url, function( data ) {
   
       // console.log(val.fields)
   
-      var name = val.fields['Name'];
+      var Name = val.fields['Name'];
   
       var Writing = val.fields['Writing'];
   
       var picture = val.fields['Picture'] ? val.fields['Picture'][0].url : null;
   
-      var html = cardTemplate(name, Writing, picture);
+      var html = cardTemplate(Name, Writing, picture);
   
       items.push(html);
   
